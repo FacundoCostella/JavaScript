@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP_JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Trabajo Práctico de JavaScript</h1>
+
+    <div>
+      <p>Este es el primer parrafo</p>
+      <p>Este es el segundo parrafo</p>
+      <p>Este es el tercer parrafo</p>
+    
+
+      <button onclick="cambiarColor()">Cambiar color a azul</button>
+
+    <!-- Codigo en js: -->
+    <script>
+        function cambiarColor() {
+            // Obtener todos los elementos de tipo <p>
+            const parrafos = document.querySelectorAll('p');
+
+            // Cambiar el color de todos los párrafos a azul
+            parrafos.forEach(p => {
+                p.style.color = 'blue';
+            });
+        }
+    </script>
+    </div>
+
+    <div>
+      <h2>Ejercicio 2: Formulario con Alerta</h2>
+        <div id = "contenedorform">
+        <form id = "formulario">
+        <label>Ingresa un texto</label>
+        <input type="text" id = "texto"/>
+        </form>
+        <button onclick="emitirAlerta()">Mostrar Alerta</button>
+        </div>
+    </div>
+
+    <div>
+      <h1>Eventos en DOM</h1>
+      <h2>Ejercicio 1: Lista con elementos</h2>
+      <ul id = "lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Ejercicio 2: Campo de texto y botones</h2>
+      <div class="botonesHabDeshab">
+        <form>
+          <input type="text" id = "campotexto" placeholder="Ingresa algo:" />
+        </form>
+        <button id = "deshabilitar">Deshabilitar campo</button>
+        <button id = "habilitar">Habilitar campo</button>
+      </div>
+    </div>
+
+    <div>
+      <h3>LocalStorage </h3>
+      <div class="correoform">
+          <form id="formCorreo">
+              <label>Correo Electrónico: </label>
+              <input type="email" id="correo" placeholder="example@gmail.com" />
+              <button type="submit">Guardar correo</button>
+          </form>
+      </div>
+      <p id="correoGuardado">Correo guardado: </p>
+      <button id="eliminarCorreo" style="display: none;">Eliminar correo guardado</button>
+  </div>
+ 
+
+    <!-- Asocio el documento .js -->
+    <script src="main.js"></script>
+  </body>
+
+</html>

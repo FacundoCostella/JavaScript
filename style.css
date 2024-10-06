@@ -1,0 +1,33 @@
+#contenedorform{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#formulario{
+  margin-right: 15px;
+}
+
+.botonesHabDeshab{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+input[disabled] {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.correoform{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
